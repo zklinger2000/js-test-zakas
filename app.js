@@ -1,3 +1,10 @@
+var value = "25"; 
+var number = Number( value); // casting function 
+alert( typeof number); //" number" 
+var obj = new Number( value); // constructor 
+alert( typeof obj); //" object"
+
+/*
 function sum(num1, num2) {
 	return num1 + num2;
 }
@@ -37,7 +44,7 @@ function PrintValues(arg1) {
 function PrintProperty(object, propertyName) {
 	return object[propertyName];
 }
-
+*/
 
 /*
 function createComparisonFunction(propertyName) {
