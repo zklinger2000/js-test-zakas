@@ -1,3 +1,26 @@
+var values = {
+	name : "Robert",
+	age : 33
+};
+
+var oneValue = { name : "Zack" };
+
+function PrintValues(arg1) {
+	var content = "";
+
+	if (arg1.name.length > 0)
+		content += ("Name: " + arg1.name + '\n');
+	if (arg1.age != undefined)
+		content += ("Age: " + arg1.age + '\n');
+	return content;
+}
+
+function PrintProperty(object, propertyName) {
+	return object[propertyName];
+}
+
+
+/*
 function createComparisonFunction(propertyName) {
 	return function(object1, object2) {
 		var value1 = object1[propertyName];
@@ -12,6 +35,7 @@ function createComparisonFunction(propertyName) {
 		}
 	};
 }
+*/
 
 /*
 function callSomeFunction(someFunction, someArgument) {
