@@ -1,3 +1,16 @@
+//more common current way to define things
+//this is "object literal notation"
+var person = {
+	name: "Nicholas",
+	age: 29,
+	job: "Software Engineer",
+	sayName: function() {
+		alert(this.name);
+	}
+};
+
+//showing how using 'new' or not changes the typeof,
+//which is also different in instanceof but in a different way
 var value = "25"; 
 var number = Number( value); // casting function 
 alert( typeof number); //" number" 
